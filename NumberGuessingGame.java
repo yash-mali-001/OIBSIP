@@ -6,11 +6,11 @@ class NumberGuessingGame{
         int max  , random_num , user_num ;
         Random r = new Random();
         Scanner sc =new Scanner(System.in);
-        System.out.println("Enter Upper limit");
+        System.out.print("Enter Upper limit :");2
         max = sc.nextInt();
         random_num = r.nextInt(max)+1;
         while (true) {
-            System.out.println(random_num);
+            System.out.println("");
             System.out.println("Enter Your Guess : ");
             user_num = sc.nextInt();
             if(random_num == user_num){
@@ -18,13 +18,16 @@ class NumberGuessingGame{
                 break;
             }
             else if(user_num > random_num){
+                System.out.println("");
                 System.out.println("Number is lower that this.");
             }
             else{
+                System.out.println("");
                 System.out.println("Number is Higher that this.");
             }
         }
         sc.close();
+        System.out.println("");
         System.out.println("End!");
     }  
 }
