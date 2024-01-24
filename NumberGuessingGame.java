@@ -6,7 +6,7 @@ class NumberGuessingGame{
         int max  , random_num , user_num ;
         Random r = new Random();
         Scanner sc =new Scanner(System.in);
-        System.out.print("Enter Upper limit :");2
+        System.out.print("Enter Upper limit :");
         max = sc.nextInt();
         random_num = r.nextInt(max)+1;
         while (true) {
